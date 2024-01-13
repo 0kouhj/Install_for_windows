@@ -1,4 +1,3 @@
-import tkinter as tk
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from ttkbootstrap.scrolled import ScrolledText
@@ -23,7 +22,7 @@ class FrontPage:
         self.y = (self.windows_y - self.height_root) / 2
         self.root.geometry(f"{self.width_root}x{self.height_root}+{int(self.x)}+{int(self.y)}")
 
-        self.page = tk.Frame(self.root)
+        self.page = ttk.Frame(self.root)
         self.page.pack()
 
         self.title = ttk.Label(self.page, text="         免责声明及注意事项         ", font=('微软雅黑', 20))
